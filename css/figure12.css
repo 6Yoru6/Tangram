@@ -1,21 +1,21 @@
 .red.antoine {
-    transform: translate(100px, 0px) rotate(180deg);
+    transform: translate(-100px, -64px) rotate(350deg);
 }
 .green.antoine {
-    transform: translate(-200px, 0px) rotate(45deg);
+    transform: translate(9px, -181px) rotate(350deg);
 }
 .blue.antoine {
-    transform: translate(170px, -120px) rotate(265deg);
+    transform: translate(91px, -170px) rotate(125deg);
 }
 .yellow.antoine {
-    transform: translate(-50px, 0px) rotate(270deg);
+    transform: translate(-96px, 96px) rotate(215deg);
 }
 .purple.antoine {
-    transform: translate(-140px, -150px) rotate(30deg) skew(45deg);
+    transform: translate(79px, 173px) rotate(170deg) skew(315deg);
 }
 .brown.antoine {
-    transform: translate(-50px, 160px) rotate(215deg);
+    transform: translate(-34px, 139px) rotate(125deg);
 }
 .orange.antoine {
-    transform: translate(160px, 133px) rotate(10deg);
+    transform: translate(-3px, -98px) rotate(125deg);
 }
