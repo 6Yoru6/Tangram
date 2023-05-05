@@ -1,15 +1,3 @@
-//Set figures on square form when page load
-function Square() {
-    document.querySelector(".red").setAttribute('class', 'figure red square');
-    document.querySelector(".green").setAttribute('class', 'figure green square');
-    document.querySelector(".blue").setAttribute('class', 'figure blue square');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow square');
-    document.querySelector(".purple").setAttribute('class', 'figure purple square');
-    document.querySelector(".brown").setAttribute('class', 'figure brown square');
-    document.querySelector(".orange").setAttribute('class', 'figure orange square');
-}
-Square()
-
 //Add buttons and links for each new figures
 function AddFigures() {
     const Buttons = document.querySelector(".buttons");
@@ -86,10 +74,11 @@ function AddFigures() {
 }
 AddFigures()
 
+
 // CHANGE CLASS WHEN CLICK ON BUTTONS TO ACTIVATE THE FIGURE WANTED //
 
 //Square Figure
-document.getElementById("btnOne").addEventListener('click', function() {
+function Square() {
     document.querySelector(".red").setAttribute('class', 'figure red square');
     document.querySelector(".green").setAttribute('class', 'figure green square');
     document.querySelector(".blue").setAttribute('class', 'figure blue square');
@@ -97,10 +86,12 @@ document.getElementById("btnOne").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple square');
     document.querySelector(".brown").setAttribute('class', 'figure brown square');
     document.querySelector(".orange").setAttribute('class', 'figure orange square');
-});
+    counter = 0;
+}
+document.getElementById("btnOne").addEventListener('click', Square)
 
 //Cat Figure
-document.getElementById("btnTwo").addEventListener('click', function() {
+function Cat() {
     document.querySelector(".red").setAttribute('class', 'figure red cat');
     document.querySelector(".green").setAttribute('class', 'figure green cat');
     document.querySelector(".blue").setAttribute('class', 'figure blue cat');
@@ -108,10 +99,12 @@ document.getElementById("btnTwo").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple cat');
     document.querySelector(".brown").setAttribute('class', 'figure brown cat');
     document.querySelector(".orange").setAttribute('class', 'figure orange cat');
-});
+    counter = 1;
+}
+document.getElementById("btnTwo").addEventListener('click', Cat)
 
 //Boat Figure
-document.getElementById("btnThree").addEventListener('click', function() {
+function Boat() {
     document.querySelector(".red").setAttribute('class', 'figure red Boat');
     document.querySelector(".green").setAttribute('class', 'figure green Boat');
     document.querySelector(".blue").setAttribute('class', 'figure blue Boat');
@@ -119,10 +112,12 @@ document.getElementById("btnThree").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple Boat');
     document.querySelector(".brown").setAttribute('class', 'figure brown Boat');
     document.querySelector(".orange").setAttribute('class', 'figure orange Boat');
-});
+    counter = 2;
+}
+document.getElementById("btnThree").addEventListener('click', Boat)
 
 //Dog Figure
-document.getElementById("btnFour").addEventListener('click', function() {
+function Dog() {
     document.querySelector(".red").setAttribute('class', 'figure red dog');
     document.querySelector(".green").setAttribute('class', 'figure green dog');
     document.querySelector(".blue").setAttribute('class', 'figure blue dog');
@@ -130,10 +125,12 @@ document.getElementById("btnFour").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple dog');
     document.querySelector(".brown").setAttribute('class', 'figure brown dog');
     document.querySelector(".orange").setAttribute('class', 'figure orange dog');
-});
+    counter = 3;
+}
+document.getElementById("btnFour").addEventListener('click', Dog)
 
 //Bear Figure
-document.getElementById("btnFive").addEventListener('click', function() {
+function Bear() {
     document.querySelector(".red").setAttribute('class', 'figure red ours');
     document.querySelector(".green").setAttribute('class', 'figure green ours');
     document.querySelector(".blue").setAttribute('class', 'figure blue ours');
@@ -141,10 +138,12 @@ document.getElementById("btnFive").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple ours');
     document.querySelector(".brown").setAttribute('class', 'figure brown ours');
     document.querySelector(".orange").setAttribute('class', 'figure orange ours');
-});
+    counter = 4;
+}
+document.getElementById("btnFive").addEventListener('click', Bear)
 
 //Horse Figure
-document.getElementById("btnSix").addEventListener('click', function() {
+function Horse() {
     document.querySelector(".red").setAttribute('class', 'figure red cheval');
     document.querySelector(".green").setAttribute('class', 'figure green cheval');
     document.querySelector(".blue").setAttribute('class', 'figure blue cheval');
@@ -152,10 +151,12 @@ document.getElementById("btnSix").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple cheval');
     document.querySelector(".brown").setAttribute('class', 'figure brown cheval');
     document.querySelector(".orange").setAttribute('class', 'figure orange cheval');
-});
+    counter = 5;
+}
+document.getElementById("btnSix").addEventListener('click', Horse)
 
 //Butterfly Figure
-document.getElementById("btnSeven").addEventListener('click', function() {
+function Butterfly() {
     document.querySelector(".red").setAttribute('class', 'figure red butterfly');
     document.querySelector(".green").setAttribute('class', 'figure green butterfly');
     document.querySelector(".blue").setAttribute('class', 'figure blue butterfly');
@@ -163,10 +164,12 @@ document.getElementById("btnSeven").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple butterfly');
     document.querySelector(".brown").setAttribute('class', 'figure brown butterfly');
     document.querySelector(".orange").setAttribute('class', 'figure orange butterfly');
-});
+    counter = 6;
+}
+document.getElementById("btnSeven").addEventListener('click', Butterfly)
 
 //Turtle Figure
-document.getElementById("btnHeight").addEventListener('click', function() {
+function Turtle() {
     document.querySelector(".red").setAttribute('class', 'figure red turtle');
     document.querySelector(".green").setAttribute('class', 'figure green turtle');
     document.querySelector(".blue").setAttribute('class', 'figure blue turtle');
@@ -174,7 +177,9 @@ document.getElementById("btnHeight").addEventListener('click', function() {
     document.querySelector(".purple").setAttribute('class', 'figure purple turtle');
     document.querySelector(".brown").setAttribute('class', 'figure brown turtle');
     document.querySelector(".orange").setAttribute('class', 'figure orange turtle');
-});
+    counter = 7;
+}
+document.getElementById("btnHeight").addEventListener('click', Turtle)
 
 //Kévin Secret Figure
 document.getElementById("btnNine").addEventListener('click', function() {
@@ -219,3 +224,26 @@ document.getElementById("btnTwelve").addEventListener('click', function() {
     document.querySelector(".brown").setAttribute('class', 'figure brown antoine');
     document.querySelector(".orange").setAttribute('class', 'figure orange antoine');
 });
+
+
+// TIMER TO AUTOMATICALLY CHANGE FIGURES //
+
+//Define elements
+const FiguresList = [Square, Cat, Boat, Dog, Bear, Horse, Butterfly, Turtle];
+let counter = 0;
+
+//Square Figure on load page
+Square()
+
+//The Timer
+setInterval(() => {
+    //Change counter each time to change figure
+    counter = (counter + 1);
+    //Return to Square if precedent figure is Turtle
+    if (counter === 8) {
+        counter = 0;
+    }
+    //Display the next figure
+    FiguresList[counter]();
+        console.log(FiguresList[counter]);
+}, 15000);

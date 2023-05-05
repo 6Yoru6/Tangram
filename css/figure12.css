@@ -11,7 +11,7 @@
     transform: translate(-96px, 96px) rotate(215deg);
 }
 .purple.antoine {
-    transform: translate(79px, 173px) rotate(170deg) skew(315deg);
+    transform: translate(79px, 173px) rotate(170deg) skew(-45deg);
 }
 .brown.antoine {
     transform: translate(-34px, 139px) rotate(125deg);
