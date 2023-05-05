@@ -1,4 +1,4 @@
-//Add buttons and links for each new figures
+// Add buttons and links for each new figures //
 function AddFigures() {
     const Buttons = document.querySelector(".buttons");
     const Head = document.querySelector("head");
@@ -35,6 +35,12 @@ function AddFigures() {
     Head.appendChild(newLink2);
     newLink2.setAttribute('rel', 'stylesheet');
     newLink2.setAttribute('href', 'css/figure9.css');
+
+    // Timer
+    const newButton3 = document.createElement("button");
+    Buttons.appendChild(newButton3);
+    newButton3.setAttribute('id', 'btnTimer');
+    newButton3.innerHTML = "Stop/Start Timer";
 }
 AddFigures()
 
@@ -166,15 +172,30 @@ let counter = 0;
 //Square Figure on load page
 Square()
 
-//The Timer
-setInterval(() => {
-    //Change counter each time to change figure
-    counter = (counter + 1);
-    //Return to Square if precedent figure is Turtle
-    if (counter === 8) {
-        counter = 0;
+// The Timer //
+let timerStatus = false;
+let intervalId;
+
+//Button to enable or disable Timer
+document.getElementById("btnTimer").addEventListener("click", () => {
+    //Activate the timer if variable on "false"
+    if (!timerStatus) {
+        intervalId = setInterval(() => {
+            counter = (counter + 1);
+            //If element to loop the Timer
+            if (counter === 8) {
+                counter = 0;
+            }
+            FiguresList[counter](); //Function to change the figures
+                console.log(FiguresList[counter])
+            }, 7000);
+        timerStatus = true;
+            console.log("Statut du Timer =", timerStatus)
+    } 
+    //Disable the timer if variable on "true"
+    else {
+        clearInterval(intervalId); //Stop the Timer
+        timerStatus = false;
+            console.log("Statut du Timer =", timerStatus)
     }
-    //Display the next figure
-    FiguresList[counter]();
-        console.log(FiguresList[counter]);
-}, 8000);
+});
