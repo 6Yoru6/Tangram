@@ -145,13 +145,13 @@ document.getElementById("btnFive").addEventListener('click', function() {
 
 //Horse Figure
 document.getElementById("btnSix").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red cheval');
+    document.querySelector(".green").setAttribute('class', 'figure green cheval');
+    document.querySelector(".blue").setAttribute('class', 'figure blue cheval');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow cheval');
+    document.querySelector(".purple").setAttribute('class', 'figure purple cheval');
+    document.querySelector(".brown").setAttribute('class', 'figure brown cheval');
+    document.querySelector(".orange").setAttribute('class', 'figure orange cheval');
 });
 
 //Butterfly Figure
