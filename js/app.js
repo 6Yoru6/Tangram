@@ -19,9 +19,9 @@ function AddFigures() {
     document.querySelector("#btnOne").innerHTML = "Carré";
     document.querySelector("#btnTwo").innerHTML = "Chat";
     document.querySelector("#btnThree").innerHTML = "Bateau";
-    document.querySelector("#btnFour").innerHTML = "4";
+    document.querySelector("#btnFour").innerHTML = "Chien";
     document.querySelector("#btnFive").innerHTML = "Ours";
-    document.querySelector("#btnSix").innerHTML = "6";
+    document.querySelector("#btnSix").innerHTML = "Cheval";
     document.querySelector("#btnSeven").innerHTML = "Papillon";
 
 
@@ -29,7 +29,7 @@ function AddFigures() {
     const newButton8 = document.createElement("button");
     Buttons.appendChild(newButton8);
     newButton8.setAttribute('id', 'btnHeight');
-    newButton8.innerHTML = "8";
+    newButton8.innerHTML = "Tortue";
 
     const newLink8 = document.createElement("link");
     Head.appendChild(newLink8);
@@ -121,15 +121,15 @@ document.getElementById("btnThree").addEventListener('click', function() {
     document.querySelector(".orange").setAttribute('class', 'figure orange Boat');
 });
 
-//
+//Dog Figure
 document.getElementById("btnFour").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red dog');
+    document.querySelector(".green").setAttribute('class', 'figure green dog');
+    document.querySelector(".blue").setAttribute('class', 'figure blue dog');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow dog');
+    document.querySelector(".purple").setAttribute('class', 'figure purple dog');
+    document.querySelector(".brown").setAttribute('class', 'figure brown dog');
+    document.querySelector(".orange").setAttribute('class', 'figure orange dog');
 });
 
 //Bear Figure
@@ -143,7 +143,7 @@ document.getElementById("btnFive").addEventListener('click', function() {
     document.querySelector(".orange").setAttribute('class', 'figure orange ours');
 });
 
-//
+//Horse Figure
 document.getElementById("btnSix").addEventListener('click', function() {
     document.querySelector(".red").setAttribute('class', 'figure red ');
     document.querySelector(".green").setAttribute('class', 'figure green ');
@@ -165,57 +165,57 @@ document.getElementById("btnSeven").addEventListener('click', function() {
     document.querySelector(".orange").setAttribute('class', 'figure orange butterfly');
 });
 
-//
+//Turtle Figure
 document.getElementById("btnHeight").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red turtle');
+    document.querySelector(".green").setAttribute('class', 'figure green turtle');
+    document.querySelector(".blue").setAttribute('class', 'figure blue turtle');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow turtle');
+    document.querySelector(".purple").setAttribute('class', 'figure purple turtle');
+    document.querySelector(".brown").setAttribute('class', 'figure brown turtle');
+    document.querySelector(".orange").setAttribute('class', 'figure orange turtle');
 });
 
 //Kévin Secret Figure
 document.getElementById("btnNine").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red kevin');
+    document.querySelector(".green").setAttribute('class', 'figure green kevin');
+    document.querySelector(".blue").setAttribute('class', 'figure blue kevin');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow kevin');
+    document.querySelector(".purple").setAttribute('class', 'figure purple kevin');
+    document.querySelector(".brown").setAttribute('class', 'figure brown kevin');
+    document.querySelector(".orange").setAttribute('class', 'figure orange kevin');
 });
 
 //Cédric Secret Figure
 document.getElementById("btnTen").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red cedric');
+    document.querySelector(".green").setAttribute('class', 'figure green cedric');
+    document.querySelector(".blue").setAttribute('class', 'figure blue cedric');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow cedric');
+    document.querySelector(".purple").setAttribute('class', 'figure purple cedric');
+    document.querySelector(".brown").setAttribute('class', 'figure brown cedric');
+    document.querySelector(".orange").setAttribute('class', 'figure orange cedric');
 });
 
 //Gregory Secret Figure
 document.getElementById("btnEleven").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red gregory');
+    document.querySelector(".green").setAttribute('class', 'figure green gregory');
+    document.querySelector(".blue").setAttribute('class', 'figure blue gregory');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow gregory');
+    document.querySelector(".purple").setAttribute('class', 'figure purple gregory');
+    document.querySelector(".brown").setAttribute('class', 'figure brown gregory');
+    document.querySelector(".orange").setAttribute('class', 'figure orange gregory');
 });
 
 //Antoine Secret Figure
 document.getElementById("btnTwelve").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red antoine');
+    document.querySelector(".green").setAttribute('class', 'figure green antoine');
+    document.querySelector(".blue").setAttribute('class', 'figure blue antoine');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow antoine');
+    document.querySelector(".purple").setAttribute('class', 'figure purple antoine');
+    document.querySelector(".brown").setAttribute('class', 'figure brown antoine');
+    document.querySelector(".orange").setAttribute('class', 'figure orange antoine');
 });
